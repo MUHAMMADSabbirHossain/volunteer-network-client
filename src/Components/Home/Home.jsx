@@ -23,9 +23,7 @@ const Home = () => {
                     {
                         volunteer._id
                     }
-                    {
-                        volunteer.imgage
-                    }
+                    <img src={volunteer.eventImgLink} alt="" />
 
                     <button><Link to="/addvolunteer">activity-name: {volunteer.name}</Link></button>
                 </div>)

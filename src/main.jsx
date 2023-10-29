@@ -6,12 +6,21 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Blogs from './Components/Blogs/Blogs.jsx';
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App></App>
-  }
+    path: "/",
+    element: <App></App>,
+    children: [
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>
+      }
+    ]
+
+  },
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

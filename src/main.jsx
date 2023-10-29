@@ -7,6 +7,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Blogs from './Components/Blogs/Blogs.jsx';
+import Events from './Components/Events/Events.jsx';
+import Donation from './Components/Donation/Donation.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs></Blogs>
+      },
+      {
+        path: "/events",
+        element: <Events></Events>
+      },
+      {
+        path: "/donation",
+        element: <Donation></Donation>
       }
     ]
 

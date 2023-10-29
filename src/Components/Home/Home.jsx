@@ -2,6 +2,7 @@ import React from 'react';
 import "./Home.css";
 import Volunteers from '../Volunteers/Volunteers';
 import useVolunteers from '../../Hooks/UseVolunteers';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -22,6 +23,13 @@ const Home = () => {
                     {
                         volunteer._id
                     }
+                    {
+                        volunteer.imgage
+                    }
+                    {
+                        volunteer.name
+                    }
+                    <button><Link to="/addvolunteer">activity name</Link></button>
                 </div>)
             }
 

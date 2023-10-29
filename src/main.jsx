@@ -12,6 +12,7 @@ import Donation from './Components/Donation/Donation.jsx';
 import Home from './Components/Home/Home.jsx';
 import SignUp from './Components/SignUp/SignUp.jsx';
 import SignIn from './Components/SignIn/SignIn.jsx';
+import AddVolunteer from './Components/AddVolunteer/AddVolunteer.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,16 +24,20 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: "/blogs",
-        element: <Blogs></Blogs>
+        path: "addvolunteer",
+        element: <AddVolunteer></AddVolunteer>
+      },
+      {
+        path: "/donation",
+        element: <Donation></Donation>
       },
       {
         path: "/events",
         element: <Events></Events>
       },
       {
-        path: "/donation",
-        element: <Donation></Donation>
+        path: "/blogs",
+        element: <Blogs></Blogs>
       },
       {
         path: "/signup",
@@ -41,13 +46,13 @@ const router = createBrowserRouter([
       {
         path: "/signin",
         element: <SignIn></SignIn>
-      }
+      },
     ]
   },
-])
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);

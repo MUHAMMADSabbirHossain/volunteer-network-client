@@ -9,12 +9,17 @@ import {
 import Blogs from './Components/Blogs/Blogs.jsx';
 import Events from './Components/Events/Events.jsx';
 import Donation from './Components/Donation/Donation.jsx';
+import Home from './Components/Home/Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
     children: [
+      {
+        path: "/",
+        element: <Home></Home>
+      },
       {
         path: "/blogs",
         element: <Blogs></Blogs>
@@ -28,9 +33,7 @@ const router = createBrowserRouter([
         element: <Donation></Donation>
       }
     ]
-
   },
-
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

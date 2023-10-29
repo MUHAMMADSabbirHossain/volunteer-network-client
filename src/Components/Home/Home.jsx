@@ -1,8 +1,13 @@
 import React from 'react';
 import "./Home.css";
 import Volunteers from '../Volunteers/Volunteers';
+import useVolunteers from '../../Hooks/UseVolunteers';
 
 const Home = () => {
+
+    const [volunteers, setVolunteers] = useVolunteers();
+    console.log(volunteers);
+
     return (
         <div>
             <h1>Home</h1>
@@ -11,6 +16,8 @@ const Home = () => {
             <button type="submit">Search</button>
 
             <Volunteers></Volunteers>
+            <h2>Search Result: {volunteers.length}</h2>
+
         </div>
     );
 };

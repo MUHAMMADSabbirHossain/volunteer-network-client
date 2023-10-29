@@ -17,6 +17,13 @@ const Home = () => {
 
             <Volunteers></Volunteers>
             <h2>Search Result: {volunteers.length}</h2>
+            {
+                volunteers.map(volunteer => <div key={volunteer._id}>
+                    {
+                        volunteer._id
+                    }
+                </div>)
+            }
 
         </div>
     );

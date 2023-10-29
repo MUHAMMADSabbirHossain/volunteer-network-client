@@ -25,7 +25,7 @@ const Home = () => {
                     }
                     <img src={volunteer.eventImgLink} alt="" />
 
-                    <button><Link to="/addvolunteer">activity-name: {volunteer.name}</Link></button>
+                    <button><Link to="/addvolunteer">{volunteer.name}</Link></button>
                 </div>)
             }
 

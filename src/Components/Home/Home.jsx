@@ -26,10 +26,8 @@ const Home = () => {
                     {
                         volunteer.imgage
                     }
-                    {
-                        volunteer.name
-                    }
-                    <button><Link to="/addvolunteer">activity name</Link></button>
+
+                    <button><Link to="/addvolunteer">activity-name: {volunteer.name}</Link></button>
                 </div>)
             }
 

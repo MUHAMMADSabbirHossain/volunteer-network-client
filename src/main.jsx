@@ -10,6 +10,8 @@ import Blogs from './Components/Blogs/Blogs.jsx';
 import Events from './Components/Events/Events.jsx';
 import Donation from './Components/Donation/Donation.jsx';
 import Home from './Components/Home/Home.jsx';
+import SignUp from './Components/SignUp/SignUp.jsx';
+import SignIn from './Components/SignIn/SignIn.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/donation",
         element: <Donation></Donation>
+      },
+      {
+        path: "/signup",
+        element: <SignUp></SignUp>
+      },
+      {
+        path: "/signin",
+        element: <SignIn></SignIn>
       }
     ]
   },

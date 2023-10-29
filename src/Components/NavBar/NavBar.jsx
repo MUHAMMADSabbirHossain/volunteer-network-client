@@ -17,9 +17,9 @@ const NavBar = () => {
                     <Link to="/donation">Donation</Link>
                     <Link to="/events">Events</Link>
                     <Link to="/blogs">Blogs</Link>
-                    <Link to="/register"> Register</Link>
+                    <Link to="/signup">Sign Up</Link>
                     <Link to="/signin">Sign In</Link>
-                    <Link to="/signout">Sing Out</Link>
+                    {/* <Link to="/signout">Sing Out</Link> */}
                     <Link to="/admin">Admin</Link>
                 </div>
             </nav>
